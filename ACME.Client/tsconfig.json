@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "outDir": "build",
+        "target": "es5",
+        "lib": [ "es5", "dom" ],
+        "moduleResolution": "node"
+    }
+}
+

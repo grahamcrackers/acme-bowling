@@ -1,0 +1,17 @@
+{
+    "name": "acme.client",
+    "version": "0.0.0",
+    "description": "ACME.Client",
+    "main": "app.js",
+    "author": {
+        "name": "Administrator"
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.3.0",
+        "@types/node": "^6.0.87",
+        "lymph-devtools": "^0.8.0"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1"
+    }
+}
