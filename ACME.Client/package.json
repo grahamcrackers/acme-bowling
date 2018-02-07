@@ -11,12 +11,12 @@
         "@types/node": "^6.0.87",
         "@types/jest": "^22.1.1",
         "jest": "^22.2.0",
-        "typescript": "^2.7.1"
+        "typescript": "^2.7.1",
         "lymph-devtools": "^0.8.0"
     },
     "dependencies": {
         "jquery": "^3.3.1",
-        "lymph-client": "^0.18.0",
+        "lymph-client": "^0.18.0"
     },
     "jest": {
         "moduleFileExtensions": [
