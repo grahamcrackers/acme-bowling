@@ -12,6 +12,7 @@
         "lymph-devtools": "^0.8.0"
     },
     "dependencies": {
-        "jquery": "^3.3.1"
+        "jquery": "^3.3.1",
+        "lymph-client": "^0.18.0"
     }
 }

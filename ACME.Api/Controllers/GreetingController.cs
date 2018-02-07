@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ACME2.Domain;
+﻿using ACME.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ACME.Api.Controllers
@@ -10,12 +6,23 @@ namespace ACME.Api.Controllers
     [Route("api/greeting")]
     public class GreetingController : Controller
     {
+        private readonly GreetingBuilder _greetingBuilder;
+
+        public GreetingController()
+        {
+            _greetingBuilder = new GreetingBuilder();
+        }
+
         [HttpGet]
         public dynamic Get()
         {
-            var greetingBuilder = new GreetingBuilder();
+            return new {Text = _greetingBuilder.Build()};
+        }
 
-            return new { Text = greetingBuilder.Build() };
+        [HttpGet("{name}")]
+        public dynamic GetByName(string name)
+        {
+            return new {Text = _greetingBuilder.Build(name)};
         }
     }
 }
