@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ACME.Api.Controllers;
+using ACME.Domain;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,6 +26,7 @@ namespace ACME.Api
         {
             services.AddMvc();
             services.AddCors();
+            services.AddSingleton<IGameRepository, InMemoryGameRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

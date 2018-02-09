@@ -3,9 +3,13 @@
     "version": "0.0.0",
     "description": "ACME.Client",
     "main": "app.js",
-    "author": {
-        "name": "Administrator"
-    },
+  "author": {
+    "name": "Administrator"
+  },
+  "scripts": {
+    "start": "node app.ts",
+    "dev": "nodemon app.ts"
+  },
     "devDependencies": {
         "@types/jquery": "^3.3.0",
         "@types/node": "^6.0.87",
